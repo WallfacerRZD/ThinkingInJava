@@ -59,5 +59,14 @@ return new Contents() {
 [Controls](./Controls)
 
 ## 内部类的继承
-[InheritInner.java](./InheritInner.java)
+[InheritInner.java](./InheritInner.java)  
 
+## 内部类可以被覆盖吗
+不可以, 两个内部类是完全独立的两个实体, 各自在自己的命名空间内.   
+
+## 局部内部类
+在代码块里创建的局部内部类不能有访问说明符, 因为它不是外围类的一部分, 但是它可以访问当前代码块内的常量(变量).  
+
+[LocalInnerClass.java](./LocalInnerClass.java)
+
+## 内部标识符
