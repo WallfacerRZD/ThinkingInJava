@@ -56,6 +56,9 @@ class Implementation2 implements Service {
             };
 }
 
+/**
+ * 内部类实现工厂模式
+ */
 public class Factories {
     public static void serviceConsumer(ServiceFactory fact) {
         Service s = fact.getService();
