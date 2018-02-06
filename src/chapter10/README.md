@@ -58,3 +58,6 @@ return new Contents() {
 ### 内部类与控制框架
 [Controls](./Controls)
 
+## 内部类的继承
+[InheritInner.java](./InheritInner.java)
+
