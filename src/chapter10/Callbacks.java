@@ -35,6 +35,7 @@ class Callee2 extends MyIncrement {
     }
 
     /**
+     *
      * MyIncrement.increment()不能用于Incrementable用途
      * 解决方法是用内部类独立地实现Incrementable接口
      */
