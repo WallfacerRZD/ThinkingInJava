@@ -7,10 +7,12 @@ import java.util.Iterator;
  */
 public class IterableClass implements Iterable<String> {
     private String[] words = "h e l l o w o r l d".split(" ");
+
     @Override
     public Iterator<String> iterator() {
         return new Iterator<String>() {
             int curr = 0;
+
             @Override
             public boolean hasNext() {
                 return curr != words.length;
