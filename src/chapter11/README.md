@@ -71,3 +71,8 @@ Collection是描述所有序列容器的共性的跟接口
 Java SE5引入了新的被称为Iterable的接口, 接口包含一个能够产生Iterator的iterator()方法, 并且Iterable接口被foreach用来在序列中移动.  
 
 [IterableClass.java](./IterableClass.java)
+
+### 适配器方法惯用法
+...
+## 总结
+新程序中不应该使用过时的Vector, Hashtable和Stack
