@@ -56,8 +56,5 @@ return new Contents() {
 ### 闭包与回调
 [Callbacks.java](./Callbacks.java)
 ### 内部类与控制框架
-[Event.java](./Event.java)  
+[Controls](./Controls)
 
-[GreenhouseController.java](./GreenhouseController.java)  
-
-[GreenhouseControls.java](./GreenhouseControls.java)

@@ -1,5 +1,9 @@
-package chapter10;
+package chapter10.Controls;
 
+/**
+ * 抽象事件类
+ * 重新action到达实现不同行为的目的
+ */
 public abstract class Event {
     private long enventTime;
     protected final long delayTime;

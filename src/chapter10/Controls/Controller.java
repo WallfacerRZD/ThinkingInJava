@@ -1,8 +1,14 @@
-package chapter10;
+package chapter10.Controls;
+
+import chapter10.Controls.Event;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 控制框架
+ * 提供增加事件, 运行事件功能
+ */
 public class Controller {
     private List<Event> eventList = new ArrayList<>();
     public void addEvent(Event c) {

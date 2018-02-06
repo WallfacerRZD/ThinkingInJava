@@ -1,5 +1,9 @@
-package chapter10;
+package chapter10.Controls;
 
+/**
+ * 继承自控制框架, 实现具体的温室控制
+ * 有多个继承自Event的内部类, 表示具体的事件.
+ */
 public class GreenhouseControls extends Controller {
     private boolean light = false;
 

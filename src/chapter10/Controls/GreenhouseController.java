@@ -1,5 +1,8 @@
-package chapter10;
+package chapter10.Controls;
 
+/**
+ * 初始化化系统.
+ */
 public class GreenhouseController {
     public static void main(String[] args) {
         GreenhouseControls gc = new GreenhouseControls();
