@@ -27,4 +27,22 @@ Class引用总是指向某个Class对象, 它可以制造类的实例, 并包含
 
 创建一个Class引用, 它被限定为某种类型[BoundedClassReference.java](./BoundedClassReference.java)  
 
+newInstance()将返回该对象的确切类型  
+
+### 新的转型语法
+`class.cast(b)`将参数b转换为具体的class类型.  
+
+## 类型转换前先做检查
+RTTI形式包括:
+1. 传统的类型转换: 如果执行了一个错误的类型转换, 就会抛出一个ClassCastException异常
+2. 代表对象的类型的Class对象: 通过查询Class对象可以获取运行时所需的信息
+3. instanceof关键字: 判断对象是不是某个特定类型的实例
+
+### 使用类字面常量
+...
+
+## instanceof与Class的等价性
+...
+
+## 反射:运行时的类信息
 
