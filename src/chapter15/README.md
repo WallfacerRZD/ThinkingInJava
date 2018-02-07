@@ -37,3 +37,8 @@ Java泛型是使用擦除来实现的, 在使用泛型时, 任何具体的类型
 ### C++方式
 [Manipulator.cpp](./Manipulator.cpp)  
 
+[Manipulator.java](./Manipulator.java)  
+
+泛型类型参数将擦除到它的第一个边界.  
+
+### 迁移兼容性

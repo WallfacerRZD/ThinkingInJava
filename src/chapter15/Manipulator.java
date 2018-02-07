@@ -10,7 +10,7 @@ class HasF {
  * 编译失败
  * 为了调用f(), 必须借助泛型类
  */
-public class Manipulator<T> /* Manipulator<T extends HasF> */{
+public class /*Manipulator<T>*/  Manipulator<T extends HasF> {
     private T obj;
 
     public Manipulator(T x) {
