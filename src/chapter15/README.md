@@ -18,3 +18,6 @@ Java SE7 已经支持参数推断.
 
 ### 一个通用的Generator
 [BaseGenerator.java](./BaseGenerator.java)
+
+### 简化元组的使用
+[Tuple.java](./Tuple.java)
