@@ -21,3 +21,6 @@ Java SE7 已经支持参数推断.
 
 ### 简化元组的使用
 [Tuple.java](./Tuple.java)
+
+### 一个Set实用工具
+[Sets.java](./Sets.java)
