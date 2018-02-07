@@ -6,3 +6,15 @@
 
 [GenericMethods.java](./GenericMethods.java)  
 
+### 杠杆利用类型参数推断
+Java SE7 已经支持参数推断.  
+`List<Integer> list = new ArrayList<>();`
+
+### 可变参数与泛型方法
+泛型方法与可变参数列表能够很好地共存
+
+### 用于Generator的泛型方法
+...
+
+### 一个通用的Generator
+[BaseGenerator.java](./BaseGenerator.java)
