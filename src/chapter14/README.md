@@ -25,4 +25,6 @@ Class引用总是指向某个Class对象, 它可以制造类的实例, 并包含
 
 可以对Class引用所指向的Class对象的类型进行限定.[GenericClassReference.java](./GenericClassReference.java)  
 
+创建一个Class引用, 它被限定为某种类型[BoundedClassReference.java](./BoundedClassReference.java)  
+
 
