@@ -61,3 +61,15 @@ Java泛型是使用擦除来实现的, 在使用泛型时, 任何具体的类型
 最便利的工厂对象是Class对象[ClassAsFactory.java](./ClassAsFactory.java)  
 
 建议使用显示的工厂[FactoryConstraint.java](./FactoryConstraint.java)
+
+### 泛型数组
+
+
+## 边界
+因为擦除移出了类型信息, 所以, 可以用无界泛型参数调用的方法只是那些可以用Object调用的方法.  
+
+Java泛型重用了extends关键字  
+
+使用边界[BasicBounds.java](./BasicBounds.java)  
+
+在继承的每个层次上添加边界限制[EpicBattle.java](./EpicBattle.java)
