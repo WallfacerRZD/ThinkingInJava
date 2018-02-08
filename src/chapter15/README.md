@@ -53,4 +53,11 @@ Java泛型是使用擦除来实现的, 在使用泛型时, 任何具体的类型
 ## 擦除的补偿
 如果引用类型标签, 就可以转而使用动态的IsInstance()  
 
-[ClassTypeCapture.java](./ClassTypeCapture.java)
+[ClassTypeCapture.java](./ClassTypeCapture.java)  
+
+### 创建类型实例
+创建泛型类型的对象, Java中的解决方案是传递一个工厂对象.  
+
+最便利的工厂对象是Class对象[ClassAsFactory.java](./ClassAsFactory.java)  
+
+建议使用显示的工厂[FactoryConstraint.java](./FactoryConstraint.java)
