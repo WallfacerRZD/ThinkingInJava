@@ -108,7 +108,7 @@ List实际上表示"持有任何Object类型的原生List", List<?>表示"具有
 
 ### 实现参数化接口
 一个类不能实现同一个泛型接口的两种变体
-
+[Payable.java](./Payable.java)
 
 
 
