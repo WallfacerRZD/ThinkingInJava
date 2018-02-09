@@ -98,7 +98,16 @@ List实际上表示"持有任何Object类型的原生List", List<?>表示"具有
 
 [Wildcards.java](./Wildcards.java)  
 
+### 捕获转换
+[CaptureConversion.java](./CaptureConversion.java)
 
+## 问题
+使用Java泛型时会出现的各类问题
+### 任何基本类型都不能作为类型参数
+解决办法: 使用自动包装机制
+
+### 实现参数化接口
+一个类不能实现同一个泛型接口的两种变体
 
 
 
