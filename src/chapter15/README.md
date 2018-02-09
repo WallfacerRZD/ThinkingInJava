@@ -73,3 +73,11 @@ Java泛型重用了extends关键字
 使用边界[BasicBounds.java](./BasicBounds.java)  
 
 在继承的每个层次上添加边界限制[EpicBattle.java](./EpicBattle.java)
+
+## 通配符
+编译时是Fruit[], 运行时是Apple[][CovariantArrays.java](./CovariantArrays.java)  
+
+Apple的List在类型上不等价于Fruit的List, 即使Apple是一种Fruit类型`List<Fruit> flist = new List<Apple>(); //Compile Error`  
+
+
+
