@@ -77,7 +77,16 @@ Java泛型重用了extends关键字
 ## 通配符
 编译时是Fruit[], 运行时是Apple[][CovariantArrays.java](./CovariantArrays.java)  
 
-Apple的List在类型上不等价于Fruit的List, 即使Apple是一种Fruit类型`List<Fruit> flist = new List<Apple>(); //Compile Error`  
+Apple的List在类型上不等价于Fruit的List, 即使Apple是一种Fruit类型`List<Fruit> flist = new List<Apple>(); //Compile Error`真正的问题是我们在讨论容器的类型, 而不是容器的持有类型.  
+
+无法再添加[GenericsAndCovariance.java](./GenericsAndCovariance.java)  
+
+### 编译器有多聪明
+
+
+
+
+
 
 
 
