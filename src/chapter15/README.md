@@ -82,7 +82,14 @@ Apple的List在类型上不等价于Fruit的List, 即使Apple是一种Fruit类�
 无法再添加[GenericsAndCovariance.java](./GenericsAndCovariance.java)  
 
 ### 编译器有多聪明
+[CompilerIntelligence.java](./CompilerIntelligence.java)  
 
+[Holder.java](./Holder.java)  
+
+### 逆变
+超类型通配符`<? super MyClass>`, 可以安全写入[GenericWriting.java](./GenericWriting.java)  
+
+[GenericReader.java](./GenericReader.java)
 
 
 
