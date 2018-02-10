@@ -110,6 +110,29 @@ List实际上表示"持有任何Object类型的原生List", List<?>表示"具有
 一个类不能实现同一个泛型接口的两种变体
 [Payable.java](./Payable.java)
 
+### 转型和警告
+使用带有泛型类型参数的转型或instanceof不会有任何效果, 由于擦除的原因, 编译器无法知道这个转型是否是安全的.  
+
+### 重载
+```
+public class UseList<W, T> {
+    void f(List<T> v) {}
+    void f(List<W> v) {}
+}
+```
+无法编译, 必须提供不同的函数名
+
+### 基类劫持了接口
+[ComparablePet.java](./ComparablePet.java)
+
+## 自限定的类型
+`class SelfBounded<T extends SelfBounded<T>> {}`可以像这样使用这个类`class A extends SelfBouned<A>{}`保证类型参数必须与正在被定义的类相同  
+
+未使用自限定的类型[OrdinaryArguments.java](./OrdinaryArguments/.java)  
+
+使用自限定的类型[SelfBoundedAndCovariantArguments.java](./SelfBoundedAndCovariantArguments.java)  
+
+如果不使用自限定类型, 普通的继承机制就会介入[PlainGenericInheritance.java](./PlainGenericInheritance.java)
 
 
 
