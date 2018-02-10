@@ -134,6 +134,8 @@ public class UseList<W, T> {
 
 如果不使用自限定类型, 普通的继承机制就会介入[PlainGenericInheritance.java](./PlainGenericInheritance.java)
 
+## 动态类型安全
+旧式代码可以会破坏你的容器, Java SE5提供了一组静态方法来动态检查你的容器.[CheckedList.java](./CheckedList.java)
 
 
 
