@@ -84,3 +84,6 @@ notifyAll(): 唤醒所有等待这个锁的任务.
 
 ### 吐司BlockingQueue
 使用同阻塞队列, 消除类与类之间的耦合[TestBlockingQueues](./TestBlockingQueues.java)
+
+### 任务间使用管道进行输入/输出
+[PipedIO](./PipedIO.java)
