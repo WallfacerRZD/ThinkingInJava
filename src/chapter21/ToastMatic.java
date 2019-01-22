@@ -7,13 +7,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 class Toast {
-    public enum Status {
-        DRY, BUTTERED, JAMMED
-    }
-
-    private Status status = Status.DRY;
     private final int id;
-
+    private Status status = Status.DRY;
     public Toast(int id) {
         this.id = id;
     }
@@ -37,6 +32,10 @@ class Toast {
     @Override
     public String toString() {
         return "Toast " + id + ": " + status;
+    }
+
+    public enum Status {
+        DRY, BUTTERED, JAMMED
     }
 }
 

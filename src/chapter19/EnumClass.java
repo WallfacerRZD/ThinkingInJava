@@ -1,6 +1,7 @@
 package chapter19;
 
 enum Shrubbery {GROUND, CRAWLING, HANGING}
+
 public class EnumClass {
     public static void main(String[] args) {
         for (Shrubbery s : Shrubbery.values()) {

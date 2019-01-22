@@ -8,6 +8,7 @@ import java.lang.annotation.Target;
 /**
  * 数据库表中键的限制
  * 指定键是否为主键, 是否允许为空, 是否是唯一
+ *
  * @author WallfacerRZD
  * @date 2018/6/5 11:27
  */

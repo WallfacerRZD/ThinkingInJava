@@ -1,7 +1,5 @@
 package chapter10.Controls;
 
-import chapter10.Controls.Event;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +9,7 @@ import java.util.List;
  */
 public class Controller {
     private List<Event> eventList = new ArrayList<>();
+
     public void addEvent(Event c) {
         eventList.add(c);
     }

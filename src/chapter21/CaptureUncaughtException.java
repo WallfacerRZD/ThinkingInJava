@@ -35,6 +35,7 @@ class HandlerThreadFactory implements ThreadFactory {
         return t;
     }
 }
+
 public class CaptureUncaughtException {
     public static void main(String[] args) {
         ExecutorService exec = Executors.newCachedThreadPool(

@@ -1,6 +1,5 @@
 package chapter15;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +26,7 @@ public class UnboundedWildcards1 {
         list2 = list;
         list3 = list;
     }
+
     public static void main(String[] args) {
         assign1(new ArrayList());
         assgin2(new ArrayList());

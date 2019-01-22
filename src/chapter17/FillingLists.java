@@ -6,6 +6,7 @@ import java.util.List;
 
 class StringAddress {
     private String str;
+
     StringAddress(String str) {
         this.str = str;
     }

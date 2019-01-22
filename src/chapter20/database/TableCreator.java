@@ -58,7 +58,7 @@ public class TableCreator {
             }
             String tableCreate = createCommand.substring(0, createCommand.length() - 1) + ");";
             System.out.println("Table Creation SQL for " +
-                    className + " is: \n" + tableCreate);
+                                       className + " is: \n" + tableCreate);
         }
     }
 

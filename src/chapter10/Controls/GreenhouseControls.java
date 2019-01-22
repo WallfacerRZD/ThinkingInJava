@@ -6,6 +6,23 @@ package chapter10.Controls;
  */
 public class GreenhouseControls extends Controller {
     private boolean light = false;
+    private boolean water = false;
+
+    public static class Terminate extends Event {
+        public Terminate(long delayTime) {
+            super(delayTime);
+        }
+
+        @Override
+        public void action() {
+            System.exit(0);
+        }
+
+        @Override
+        public String toString() {
+            return "Terminating";
+        }
+    }
 
     public class LightOn extends Event {
         public LightOn(long delayTime) {
@@ -38,8 +55,6 @@ public class GreenhouseControls extends Controller {
             return "Light is off";
         }
     }
-
-    private boolean water = false;
 
     public class WaterOn extends Event {
         public WaterOn(long delayTime) {
@@ -97,22 +112,6 @@ public class GreenhouseControls extends Controller {
         @Override
         public String toString() {
             return "Restarting system";
-        }
-    }
-
-    public static class Terminate extends Event {
-        public Terminate(long delayTime) {
-            super(delayTime);
-        }
-
-        @Override
-        public void action() {
-            System.exit(0);
-        }
-
-        @Override
-        public String toString() {
-            return "Terminating";
         }
     }
 

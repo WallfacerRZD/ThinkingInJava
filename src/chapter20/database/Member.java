@@ -6,6 +6,16 @@ package chapter20.database;
  */
 @DBTable(name = "MEMBER")
 public class Member {
+    private static int memberCount;
+    @SQLString(value = 30)
+    private String firstName;
+    @SQLString(value = 50)
+    private String lastName;
+    @SQLInteger
+    private Integer age;
+    @SQLString(value = 30, constrains = @Constrains(primaryKey = true))
+    private String handle;
+
     public String getFirstName() {
         return firstName;
     }
@@ -17,20 +27,6 @@ public class Member {
     public Integer getAge() {
         return age;
     }
-
-    private static int memberCount;
-
-    @SQLString(value = 30)
-    private String firstName;
-
-    @SQLString(value = 50)
-    private String lastName;
-
-    @SQLInteger
-    private Integer age;
-
-    @SQLString(value = 30, constrains = @Constrains(primaryKey = true))
-    private String handle;
 
     @Override
     public String toString() {

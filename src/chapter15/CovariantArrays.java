@@ -1,8 +1,5 @@
 package chapter15;
 
-import java.util.ArrayList;
-import java.util.List;
-
 class Fruit {
 }
 

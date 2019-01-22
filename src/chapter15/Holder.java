@@ -10,19 +10,6 @@ public class Holder<T> {
         value = val;
     }
 
-    public T get() {
-        return value;
-    }
-
-    public void set(T val) {
-        value = val;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return value.equals(obj);
-    }
-
     public static void main(String[] args) {
         Holder<Apple> apple = new Holder<>(new Apple());
 
@@ -51,5 +38,18 @@ public class Holder<T> {
         // fruit.set(new Apple());
         // fruit.set(new Fruit());
         System.out.println(fruit.equals(d));
+    }
+
+    public T get() {
+        return value;
+    }
+
+    public void set(T val) {
+        value = val;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return value.equals(obj);
     }
 }

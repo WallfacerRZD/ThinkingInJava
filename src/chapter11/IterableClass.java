@@ -8,6 +8,12 @@ import java.util.Iterator;
 public class IterableClass implements Iterable<String> {
     private String[] words = "h e l l o w o r l d".split(" ");
 
+    public static void main(String[] args) {
+        for (String s : new IterableClass()) {
+            System.out.println(s);
+        }
+    }
+
     @Override
     public Iterator<String> iterator() {
         return new Iterator<String>() {
@@ -23,11 +29,5 @@ public class IterableClass implements Iterable<String> {
                 return words[curr++];
             }
         };
-    }
-
-    public static void main(String[] args) {
-        for (String s : new IterableClass()) {
-            System.out.println(s);
-        }
     }
 }

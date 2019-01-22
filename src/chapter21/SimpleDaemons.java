@@ -3,6 +3,17 @@ package chapter21;
 import java.util.concurrent.TimeUnit;
 
 public class SimpleDaemons implements Runnable {
+    public static void main(String[] args) throws Exception {
+        for (int i = 0; i < 10; i++) {
+            Thread daemon = new Thread(new SimpleDaemons());
+            // 设置daemon线程, main()结束, 所有的daemon线程也被杀死
+            daemon.setDaemon(true);
+            daemon.start();
+        }
+        System.out.println("All daemon started");
+        TimeUnit.MILLISECONDS.sleep(200);
+    }
+
     @Override
     public void run() {
         try {
@@ -13,16 +24,5 @@ public class SimpleDaemons implements Runnable {
         } catch (InterruptedException e) {
             System.out.println("sleep() interrupted");
         }
-    }
-
-    public static void main(String[] args) throws Exception {
-        for (int i = 0; i < 10; i++) {
-            Thread daemon = new Thread(new SimpleDaemons());
-            // 设置daemon线程, main()结束, 所有的daemon线程也被杀死
-            daemon.setDaemon(true);
-            daemon.start();
-        }
-        System.out.println("All daemon started");
-        TimeUnit.MILLISECONDS.sleep(200);
     }
 }

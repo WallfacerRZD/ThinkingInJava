@@ -58,21 +58,21 @@ class Portablelunch extends Lunch {
  * 调用子类构造函数发生的事情:
  * 1. 调用父构造函数(各个域先初始化, 然后执行构造函数体)
  * 2. 调用子类的构造函数(各个域先初始化, 然后执行构造函数体)
- *
+ * <p>
  * 输出:
- *        Meal.t
- *        Meal()
- *        Lunch.t
- *        Lunch()
- *        Portablelunch.t
- *        Portablelunch()
- *        Bread.t
- *        Bread()
- *        Cheese.t
- *        Cheese()
- *        Lettuce.t
- *        Lettuce()
- *        Sandwich()
+ * Meal.t
+ * Meal()
+ * Lunch.t
+ * Lunch()
+ * Portablelunch.t
+ * Portablelunch()
+ * Bread.t
+ * Bread()
+ * Cheese.t
+ * Cheese()
+ * Lettuce.t
+ * Lettuce()
+ * Sandwich()
  */
 public class Sandwich extends Portablelunch {
     private Bread d = new Bread();

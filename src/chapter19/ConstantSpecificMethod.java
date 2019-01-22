@@ -1,7 +1,5 @@
 package chapter19;
 
-import com.sun.org.apache.bcel.internal.generic.GETFIELD;
-
 import java.text.DateFormat;
 import java.util.Date;
 
@@ -25,11 +23,11 @@ public enum ConstantSpecificMethod {
         }
     };
 
-    abstract String getInfo();
-
     public static void main(String[] args) {
         for (ConstantSpecificMethod c : ConstantSpecificMethod.values()) {
             System.out.println(c.getInfo());
         }
     }
+
+    abstract String getInfo();
 }

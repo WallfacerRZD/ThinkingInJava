@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 enum Explore {
-    HERE, THERE;
+    HERE, THERE
 }
 
 public class Reflection {
@@ -15,7 +15,7 @@ public class Reflection {
         System.out.println("Interfaces:");
         for (Type t :
                 enumClass.getGenericInterfaces()
-                ) {
+        ) {
             System.out.println(t);
         }
         System.out.println("Base: " + enumClass.getSuperclass());
@@ -33,7 +33,7 @@ public class Reflection {
         Set<String> exploreMethods = analyze(Explore.class);
         Set<String> enumMethods = analyze(Enum.class);
         System.out.println("Explore containsAll(Enum)? " +
-                exploreMethods.containsAll(enumMethods));
+                                   exploreMethods.containsAll(enumMethods));
         exploreMethods.removeAll(enumMethods);
         System.out.println(exploreMethods);
     }

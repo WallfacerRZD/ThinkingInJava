@@ -10,6 +10,18 @@ interface Counter {
 public class LocalInnerClass {
     private int count = 0;
 
+    public static void main(String[] args) {
+        LocalInnerClass li = new LocalInnerClass();
+        Counter c1 = li.getCounter("Local Inner");
+        Counter c2 = li.getCounter2("Anonymous Inner");
+        for (int i = 0; i < 5; ++i) {
+            System.out.println(c1.next());
+        }
+        for (int i = 0; i < 5; ++i) {
+            System.out.println(c2.next());
+        }
+    }
+
     Counter getCounter(final String name) {
         int localVar = 0;
 
@@ -40,17 +52,5 @@ public class LocalInnerClass {
                 return count++;
             }
         };
-    }
-
-    public static void main(String[] args) {
-        LocalInnerClass li = new LocalInnerClass();
-        Counter c1 = li.getCounter("Local Inner");
-        Counter c2 = li.getCounter2("Anonymous Inner");
-        for (int i = 0; i < 5; ++i) {
-            System.out.println(c1.next());
-        }
-        for (int i = 0; i < 5; ++i) {
-            System.out.println(c2.next());
-        }
     }
 }

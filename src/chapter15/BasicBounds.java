@@ -7,6 +7,10 @@ interface HasColor {
 }
 
 
+interface Weight {
+    int weight();
+}
+
 class Colored<T extends HasColor> {
     T item;
 
@@ -58,10 +62,6 @@ class ColoredDimension<T extends /*HasColor & */Dimension & HasColor> {
     int getZ() {
         return item.z;
     }
-}
-
-interface Weight {
-    int weight();
 }
 
 class Solid<T extends Dimension & HasColor & Weight> {

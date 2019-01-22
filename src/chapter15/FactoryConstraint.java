@@ -1,7 +1,5 @@
 package chapter15;
 
-import sun.security.smartcardio.SunPCSC;
-
 interface FactoryI<T> {
     T create();
 }

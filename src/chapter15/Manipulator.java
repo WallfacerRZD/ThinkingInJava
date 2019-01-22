@@ -17,13 +17,13 @@ public class /*Manipulator<T>*/  Manipulator<T extends HasF> {
         obj = x;
     }
 
-    public void manipulate() {
-        obj.f();
-    }
-
     public static void main(String[] args) {
         HasF hf = new HasF();
         Manipulator<HasF> mp = new Manipulator<>(hf);
         mp.manipulate();
+    }
+
+    public void manipulate() {
+        obj.f();
     }
 }

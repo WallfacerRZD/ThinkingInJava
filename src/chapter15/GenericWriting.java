@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GenericWriting {
+    static List<Apple> apples = new ArrayList<>();
+    static List<Fruit> fruits = new ArrayList<>();
+
     static <T> void writeExact(List<T> list, T item) {
         list.add(item);
     }
-
-    static List<Apple> apples = new ArrayList<>();
-    static List<Fruit> fruits = new ArrayList<>();
 
     static void f1() {
         writeExact(apples, new Apple());

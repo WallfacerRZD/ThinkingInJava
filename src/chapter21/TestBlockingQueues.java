@@ -3,7 +3,10 @@ package chapter21;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.concurrent.*;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.SynchronousQueue;
 
 class LiftOffRunner implements Runnable {
     private BlockingQueue<LiftOff> rockets;
@@ -64,10 +67,10 @@ public class TestBlockingQueues {
 
     public static void main(String[] args) {
         test("LinkedBlockingQueue",
-                new LinkedBlockingQueue<LiftOff>());
+             new LinkedBlockingQueue<LiftOff>());
         test("ArrayBlockingQueue",
-                new ArrayBlockingQueue<LiftOff>(3));
+             new ArrayBlockingQueue<LiftOff>(3));
         test("SynchronousQueue",
-                new SynchronousQueue<LiftOff>());
+             new SynchronousQueue<LiftOff>());
     }
 }

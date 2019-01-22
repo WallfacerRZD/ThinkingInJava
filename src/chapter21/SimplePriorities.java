@@ -12,12 +12,20 @@ public class SimplePriorities implements Runnable {
         this.priority = priority;
     }
 
+    public static void main(String[] args) {
+        ExecutorService exec = Executors.newCachedThreadPool();
+        for (int i = 0; i < 5; i++) {
+            exec.execute(new SimplePriorities(Thread.MIN_PRIORITY));
+        }
+        exec.execute(new SimplePriorities(Thread.MAX_PRIORITY));
+        exec.shutdown();
+    }
+
     @Override
     public String toString() {
         // 获取驱动该任务的Thread对象的引用
         return Thread.currentThread() + ": " + coutDown;
     }
-
 
     @Override
     public void run() {
@@ -34,14 +42,5 @@ public class SimplePriorities implements Runnable {
                 return;
             }
         }
-    }
-
-    public static void main(String[] args) {
-        ExecutorService exec = Executors.newCachedThreadPool();
-        for (int i = 0; i < 5; i++) {
-            exec.execute(new SimplePriorities(Thread.MIN_PRIORITY));
-        }
-        exec.execute(new SimplePriorities(Thread.MAX_PRIORITY));
-        exec.shutdown();
     }
 }

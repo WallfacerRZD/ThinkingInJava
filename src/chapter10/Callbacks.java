@@ -15,12 +15,12 @@ class Callee1 implements Incrementable {
 }
 
 class MyIncrement {
-    public void increment() {
-        System.out.println("Other operation");
-    }
-
     static void f(MyIncrement mi) {
         mi.increment();
+    }
+
+    public void increment() {
+        System.out.println("Other operation");
     }
 }
 
@@ -34,8 +34,11 @@ class Callee2 extends MyIncrement {
         System.out.println(i);
     }
 
+    Incrementable getCallbackReference() {
+        return new Closure();
+    }
+
     /**
-     *
      * MyIncrement.increment()不能用于Incrementable用途
      * 解决方法是用内部类独立地实现Incrementable接口
      */
@@ -44,10 +47,6 @@ class Callee2 extends MyIncrement {
         public void increment() {
             Callee2.this.increment();
         }
-    }
-
-    Incrementable getCallbackReference() {
-        return new Closure();
     }
 }
 

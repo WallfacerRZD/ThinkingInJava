@@ -1,6 +1,6 @@
 package chapter15;
 
-public class ComparablePet implements Comparable<ComparablePet>{
+public class ComparablePet implements Comparable<ComparablePet> {
 
     @Override
     public int compareTo(ComparablePet o) {

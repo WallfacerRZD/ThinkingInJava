@@ -28,7 +28,7 @@ public class CallableDemo {
         }
 
         for (Future<String> fs : results
-                ) {
+        ) {
             try {
                 System.out.println(fs.get());
             } catch (InterruptedException e) {

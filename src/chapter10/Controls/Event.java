@@ -5,8 +5,8 @@ package chapter10.Controls;
  * 重新action到达实现不同行为的目的
  */
 public abstract class Event {
-    private long enventTime;
     protected final long delayTime;
+    private long enventTime;
 
     public Event(long delayTime) {
         this.delayTime = delayTime;

@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 
 public @interface UseCase {
 
-    public int id();
+    int id();
 
-    public String description() default "no description";
+    String description() default "no description";
 }

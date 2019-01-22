@@ -11,6 +11,14 @@ interface ServiceFactory {
 }
 
 class Implementation1 implements Service {
+    public static ServiceFactory factory =
+            new ServiceFactory() {
+                @Override
+                public Service getService() {
+                    return new Implementation1();
+                }
+            };
+
     private Implementation1() {
     }
 
@@ -23,17 +31,17 @@ class Implementation1 implements Service {
     public void method2() {
         System.out.println("Implementation1.method2");
     }
+}
 
+class Implementation2 implements Service {
     public static ServiceFactory factory =
             new ServiceFactory() {
                 @Override
                 public Service getService() {
-                    return new Implementation1();
+                    return new Implementation2();
                 }
             };
-}
 
-class Implementation2 implements Service {
     private Implementation2() {
     }
 
@@ -46,14 +54,6 @@ class Implementation2 implements Service {
     public void method2() {
         System.out.println("Implementation2.method2");
     }
-
-    public static ServiceFactory factory =
-            new ServiceFactory() {
-                @Override
-                public Service getService() {
-                    return new Implementation2();
-                }
-            };
 }
 
 /**
