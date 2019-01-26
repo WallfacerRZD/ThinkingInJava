@@ -39,7 +39,9 @@ RTTI形式包括:
 3. instanceof关键字: 判断对象是不是某个特定类型的实例
 
 ### 使用类字面常量
-...
+[PetCount.java](./PetCount.java)   
+
+[PetCount3.java](./PetCount3.java)
 
 ## instanceof与Class的等价性
 ...
@@ -47,6 +49,7 @@ RTTI形式包括:
 ## 反射:运行时的类信息
 
 ## 动态代理
-
+[Interface.java](./Interface.java)  
+[DynamicProxyHandler.java](./DynamicProxyHandler.java)
 ## 空对象
 [Person.java](./Person.java)

@@ -30,7 +30,7 @@ public class DynamicProxyHandler implements InvocationHandler {
     }
 }
 
-class SimpleDynamicProy {
+class SimpleDynamicProxy {
     public static void consumer(Interface iface) {
         iface.doSomething();
         iface.somethingElse("ddd");
