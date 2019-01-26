@@ -46,3 +46,7 @@ RTTI形式包括:
 
 ## 反射:运行时的类信息
 
+## 动态代理
+
+## 空对象
+[Person.java](./Person.java)
