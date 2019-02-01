@@ -32,8 +32,9 @@ Java SE7 已经支持参数推断.
 ...
 
 ## 擦除的神秘之处
-Java泛型是使用擦除来实现的, 在使用泛型时, 任何具体的类型信息都被擦除了, 你唯一知道的就是你在使用一个对象.  
+Java泛型是使用擦除来实现的, 在使用泛型时, 任何具体的类型信息都被擦除了, 你唯一知道的就是你在使用一个对象.   
 
+在泛型代码内部 无法获得任何有关泛型参数类型的信息。  
 ### C++方式
 [Manipulator.cpp](./Manipulator.cpp)  
 
@@ -47,11 +48,18 @@ Java泛型是使用擦除来实现的, 在使用泛型时, 任何具体的类型
 ### 擦除的问题
 > 泛型不能用于显示地引用运行时类型的操作中, 例如转型, instanceof操作和new表达式, 因为所以关于参数的类型信息都丢失了, 无论何时, 当你在编写泛型代码时, 必须时刻提醒自己, 你只是看起来好像拥有有关参数的类型信息而已.
 
+[GenericBase.java](./GenericBase.java)  
+
 ### 边界处的动作
-...
+[ArrayMaker.java](./ArrayMaker.java)  
+
+[FilledListMaker.java](./FilledListMaker.java)  
+
+[SimpleHolder.java](./SimpleHolder.java)  [GenericHolder.java](./GenericHolder.java)
+产生的字节码一样   
 
 ## 擦除的补偿
-如果引用类型标签, 就可以转而使用动态的IsInstance()  
+[Erased.java](./Erased.java)
 
 [ClassTypeCapture.java](./ClassTypeCapture.java)  
 
